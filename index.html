@@ -1,9 +1,40 @@
-<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Listo</title>
-	</head>
+	<link rel="stylesheet" type="text/css" href="app/styles/main.css">
+	<link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+</head>
 <body>
+	<header> <h1>To Do List</h1></header>
+	<form id = "newTaskForm">
+		<label class="panel">Add Item to the To Do List!</label>
+		<div class="Input">
+			<input id="newItemInput" placeholder="Whatcha gotta do today?">
+			<button id="saveNewItem">Save</button>
+			<button id="cancel">Cancel</button>
+		</div>
+	</form>
+	<div class='new-item-header'>
+   	 <button href="#" class="pull-right pencil" id="newListItem" style="">New</button>
+	</div>
+	<div class="store">
+	<div id="newList"></div>
+	<div class="panel">
+	  In Progress
+	  <ul class="list-group" id="currentList"></ul>
+	</div>
+	<div>.</div>
+	<div class="panel">
+	  Complete
+	  <ul class="list-group" id="archivedList"></ul>
+	</div>
+	</div>
+
+
+
+
+
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="app/scripts/app.js"></script>
 </body>
